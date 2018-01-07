@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Ninja</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <!-- wrapper begins -->
+    <div id="wrapper">
+
+      <!-- header -->
+      <div id="header">
+        <h1>Disappearing Ninja</h1>
+      </div>
+
+      <!-- main content -->
+      <div id="mainContent">
+        <img src="ninja.jpg" alt="ninja1">
+        <img src="ninja.jpg" alt="ninja2">
+        <img src="ninja.jpg" alt="ninja3">
+        <img src="ninja.jpg" alt="ninja4">
+        <img src="ninja.jpg" alt="ninja5">
+        <img src="ninja.jpg" alt="ninja6">
+        <img src="ninja.jpg" alt="ninja7">
+        <img src="ninja.jpg" alt="ninja8">
+        <button>restore</button>
+      </div>
+
+      <!-- bottom -->
+      <div id="bottom">
+        <p>Bringing cuteness near you</p>
+        <p>&copy;2017 Cute Ninja, Inc.</p>
+      </div>
+
+    </div> <!-- wrapper ends -->
+
+    <!-- JavaScript -->
+    <script>
+    $("img").click(function() {
+      $(this).fadeOut("slow");
+    });
+    $("button").click(function() {
+      $("img").fadeIn("slow");
+    });
+    </script>
+
+  </body>
+</html>
